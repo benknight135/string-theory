@@ -105,8 +105,22 @@ src/
 
 - `npm run dev` - Start development server with Turbopack
 - `npm run build` - Build for production
+- `npm run export` - Build and export as static files for deployment
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
+
+### Deployment
+
+This application is configured for deployment to GitHub Pages:
+
+1. **Automatic Deployment**: The app automatically deploys to GitHub Pages when changes are pushed to the `main` branch
+2. **Static Export**: The app is built as a static site using Next.js static export feature
+3. **GitHub Actions**: Uses `.github/workflows/deploy.yml` for automated deployment
+
+To enable GitHub Pages deployment in your repository:
+1. Go to your repository Settings → Pages
+2. Select "GitHub Actions" as the source
+3. The workflow will automatically deploy on pushes to main
 
 ## 🎯 Future Enhancements
 
